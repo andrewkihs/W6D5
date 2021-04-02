@@ -11,7 +11,8 @@ class CatsController < ApplicationController
   end
 
   def new
-    
+    @cat = Cat.new
+    render :new
   end
  
   # work on the model, create a couple cat seeds

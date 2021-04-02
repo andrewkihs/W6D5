@@ -7,28 +7,31 @@
   <br>
 
   <label for="birth_date">Birth Date</label>
-  <input id="birth_date" type="" name="cat[birth_date]" value="<%= @cat.birth_date %>">
+  <input id="birth_date" type="date" name="cat[birth_date]" value="<%= @cat.birth_date %>">
   <br>
 
-  <label for="sex">Sex</label>
-  <input id="sex" type="radio" name="cat[sex]" value="<%= @cat.sex %>">
-
+  <label>Sex</label>
+  <input id="M" type="radio" name="cat[sex]" value="M" <%= @cat.sex == 'M' ? "": 'selected' %>>
+  <label for="M">M</label>
+  <%# <br> %>
+  <input id="F" type="radio" name="cat[sex]" value="F"<%= @cat.sex == 'F' ? "": 'selected' %>>
+  <label for="F">F</label>
   <br>
 
   <label for="color">Color</label>
   <select id="color" name="cat[color]">
-    <option disabled <% cat.color ? "" : "selected" %>>--- Please select a color ---</option>
-    <option value="White" <% cat.color == "White" ? "selected" : "" %>>White</option>
-    <option value="Calico" <% cat.color == "Calico" ? "selected" : "" %>>Calico</option>
-    <option value="Black" <% cat.color == "Black" ? "selected" : "" %>>Black</option>
-    <option value="Orange" <% cat.color == "Orange" ? "selected" : "" %>>Orange</option>
+    <option disabled <% @cat.color.nil? ? "" : "selected" %>>--- Please select a color ---</option>
+    <option value="White" <% @cat.color == "White" ? "selected" : "" %>>White</option>
+    <option value="Calico" <% @cat.color == "Calico" ? "selected" : "" %>>Calico</option>
+    <option value="Black" <% @cat.color == "Black" ? "selected" : "" %>>Black</option>
+    <option value="Orange" <% @cat.color == "Orange" ? "selected" : "" %>>Orange</option>
 
   </select>
   <br>
 
   <label for="description">Description</label>
   <textarea name="cat[description]">
-  <%= cat.description %>
+  <%= @cat.description %>
   </textarea>
   <br>
 
