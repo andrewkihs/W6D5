@@ -1090,3 +1090,17 @@ Processing by CatsController#new as HTML
 Completed 200 OK in 69ms (Views: 58.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/cats/new" for ::1 at 2021-04-02 17:32:12 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cats/new" for ::1 at 2021-04-02 17:32:12 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb within layouts/application
+  Rendered cats/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms)
+
+
