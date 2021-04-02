@@ -9,6 +9,10 @@ class CatsController < ApplicationController
     @cat = Cat.find(params[:id])
     render :show
   end
+
+  def new
+    
+  end
  
   # work on the model, create a couple cat seeds
   # create age method to figure out the sure
